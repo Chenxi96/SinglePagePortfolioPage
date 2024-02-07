@@ -1,0 +1,66 @@
+$backgroundColor: #151515;
+$buttonColor: #4EE1A0;
+$footerFormColor: #242424;
+$outlineColor: #D9D9D9;
+$textColor: #FFFFFF;
+
+@font-face {
+  font-family: 'Space Grotesk Bold';
+  src: url(/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+  font-family: 'Space Grotesk Bold', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $textColor;
+  background-color: $backgroundColor;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: $textColor;
+  text-decoration: inherit;
+}
+a:hover {
+  color: $textColor;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px ;
+}
+
+button {
+  border: none;
+  border-bottom: 2px solid $buttonColor;
+  padding: 0.6em 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $backgroundColor;
+  cursor: pointer;
+}
+
+
