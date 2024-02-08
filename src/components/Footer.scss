@@ -1,0 +1,74 @@
+$backgroundColor: #151515;
+$buttonColor: #4EE1A0;
+$footerFormColor: #242424;
+$outlineColor: #D9D9D9;
+$textColor: #FFFFFF;
+
+
+.contact-container {
+    position: relative;
+    text-align: center;
+    width: 84%;
+    margin-inline: auto;
+}
+
+p.contact-title {
+    font-size: 40px;
+    padding-top: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid $textColor;
+}
+
+label {
+    align-self: flex-start;
+    padding-top: 32px;
+}
+
+
+textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $textColor;
+    background-color: inherit;
+}
+
+input.btn {
+    align-self: flex-end;
+    margin-top: 32px;
+    border-bottom: 2px solid $buttonColor;
+    margin-bottom: 87px;
+}
+
+footer {
+    width: 84%;
+    border-top: 1px solid $textColor;
+    margin-inline: auto;
+}
+
+.footer-wrapper {
+    text-align: center;
+}
+
+.ringFooter {
+    position: absolute;
+    bottom: 97px;
+    right: 172px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25.6px;
+}

@@ -46,6 +46,7 @@ article.description {
   margin-bottom: 80px;
 }
 
+// experience component
 section.experience {
   min-width: 345px; 
   margin-inline: auto;
@@ -54,15 +55,41 @@ section.experience {
 
 .experience-wrapper {
   display: grid;
+  position: relative;
   grid-template-columns: 
     repeat(auto-fit, minmax(345px, 1fr));
   width: 84%;
   gap: 52px 9px;
   margin-inline: auto;
+  padding-block: 40px;
   border-top: 1px solid $outlineColor;
   border-bottom: 1px solid $outlineColor;
 }
 
+.experience-container > p {
+  margin: 0;
+}
+
+.experience-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.ringRight {
+  position: absolute;
+  top: 1320px;
+}
+
 span {
   border-bottom: 4px solid $buttonColor;
+}
+
+// project component
+section.project-container {
+  margin-bottom: 21.34%;
+}
+
+section.footer-section {
+  background-color: $footerFormColor;
 }
