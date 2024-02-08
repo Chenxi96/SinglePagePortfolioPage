@@ -6,7 +6,8 @@ import frontEnd from './assets/images/icon-frontEnd-mentor.svg'
 import linkedin from './assets/images/icon-linkedin.svg'
 import twitter from './assets/images/icon-twitter.svg'
 import mobilePic from './assets/images/image-profile-mobile.webp'
-import Project from './projects/Project'
+import Project from './components/Project'
+import Footer from './components/Footer'
 import './App.scss'
 
 function App() {
@@ -42,34 +43,38 @@ function App() {
       </article>
       <section className='experience'>
         <div className='experience-wrapper'>
-          <div>
-            <h2>HTML</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>HTML</p>
             <p>4 Years Experience</p>
           </div>
-          <div>
-            <h2>CSS</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>CSS</p>
             <p>4 Years Experience</p>
           </div>
-          <div>
-            <h2>Javascript</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>Javascript</p>
             <p>4 Years Experience</p>
           </div>
-          <div>
-            <h2>Accessibility</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>Accessibility</p>
             <p>4 Years Experience</p>
           </div>
-          <div>
-            <h2>React</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>React</p>
             <p>3 Years Experience</p>
           </div>
-          <div>
-            <h2>Sass</h2>
+          <div className='experience-container'>
+            <p className='experience-title'>Sass</p>
             <p>3 Years Experience</p>
           </div>
         </div>
+        <img className='ringRight' src={rings} alt="" />
       </section>
-      <section>
+      <section className='project-container'>
         <Project />
+      </section>
+      <section className='footer-section'>
+        <Footer rings={rings} />
       </section>
     </>
   )

@@ -4,7 +4,7 @@ import project3 from '../assets/images/thumbnail-project-3-small.webp'
 import project4 from '../assets/images/thumbnail-project-4-small.webp'
 import Project5 from '../assets/images/thumbnail-project-5-small.webp'
 import project6 from '../assets/images/thumbnail-project-6-small.webp'
-import '../projects/Project.scss'
+import '../components/Project.scss'
 
 export default function Project() {
     return(
