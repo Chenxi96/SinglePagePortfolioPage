@@ -1,6 +1,6 @@
 .header-container {
     display: flex;
-    width: 84%;
+    width: 91.467%;
     justify-content: space-between;
     margin: 80px auto 40px auto;
 }
@@ -18,10 +18,10 @@
 }
 
 .projects-container {
-    width: 84%;
+    width: 91.467%;
     display: grid;
     grid-template-columns: 
-        repeat(auto-fit, minmax(343px, 1fr));
+        repeat(auto-fit, minmax(325px, 1fr));
     margin-inline: auto;
     gap: 60px 24px;
 }
