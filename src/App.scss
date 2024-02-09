@@ -58,7 +58,7 @@ section.experience {
   position: relative;
   grid-template-columns: 
     repeat(auto-fit, minmax(345px, 1fr));
-  width: 84%;
+  width: 91.467%;
   gap: 52px 9px;
   margin-inline: auto;
   padding-block: 40px;
@@ -92,4 +92,32 @@ section.project-container {
 
 section.footer-section {
   background-color: $footerFormColor;
+}
+
+@media screen and (min-width: 768px) {
+  section.experience {
+    text-align: left;
+  }
+
+  .experience-wrapper {
+    border-bottom: none;
+    padding-top: 52px;
+  }
+
+  .experience-title {
+    font-size: 48px;
+    padding-bottom: 14px;
+  }
+
+  .experience-title + p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .experience-wrapper {
+    width:  77.083%;
+    padding-top: 72px;
+    gap: 58px 35px;
+  }
 }
