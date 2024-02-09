@@ -18,7 +18,8 @@ export default function Project() {
                     <img src={project1} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
@@ -29,7 +30,8 @@ export default function Project() {
                     <img src={project2} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
@@ -40,7 +42,9 @@ export default function Project() {
                     <img src={project3} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
+                        <p className='inline'>JAVASCRIPT</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
@@ -51,7 +55,9 @@ export default function Project() {
                     <img src={project4} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
+                        <p className='inline'>JAVASCRIPT</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
@@ -62,7 +68,9 @@ export default function Project() {
                     <img src={Project5} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
+                        <p className='inline'>JAVASCRIPT</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
@@ -73,7 +81,9 @@ export default function Project() {
                     <img src={project6} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>
-                        <p>HTML CSS</p>
+                        <p className='inline'>HTML</p>
+                        <p className='inline'>CSS</p>
+                        <p className='inline'>JAVASCRIPT</p>
                     </div>
                     <div className='project-btn'>
                         <button>View Project</button>
