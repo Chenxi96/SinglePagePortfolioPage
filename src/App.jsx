@@ -34,11 +34,11 @@ function App() {
               </a>
             </div>
           </nav>
-          <img className='profileImage' src={mobilePic} alt="" width={174} />
+          <img className='profileImage' src={mobilePic} alt="" width={174} height={383} />
         </header>
       <article className='description'>
-        <h1>Nice to meet you! I'm <span>Adam keyes.</span></h1>
-        <p>Based in the UK, I'm a front-end developer passionate about building accessible web apps that uses love.</p>
+        <h1 className='description-title'>Nice to meet you! I'm <span>Adam keyes</span>.</h1>
+        <p className='description-main'>Based in the UK, I'm a front-end developer passionate about building accessible web apps that uses love.</p>
         <button>CONTACT ME</button>
       </article>
       <section className='experience'>

@@ -54,10 +54,6 @@ $textColor: #FFFFFF;
     margin-right: 18px;
 }
 
-@media screen and (min-width: 768px) {
-
-}
-
 @media screen and (min-width: 992px) {
     .header-container {
         width: 77.083%;
@@ -70,23 +66,39 @@ $textColor: #FFFFFF;
     }
 
 
-    .projects-container img:hover {
-        filter: opacity(20%);
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-container div:hover {
+        img {
+            filter: opacity(20%);
+        }
+        cursor: pointer;
     }
 
     .project-btn {
+        display: none;
+    }
+
+    .desktop-view {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         position: absolute;
+        gap: 48px;
         top: 25%;
         left: 40%;
     }
 
-    .project-btn > button {
+    .desktop-view > button {
         background-color: transparent;
+        letter-spacing: 2.29px; 
+        width: max-content;
     }
 
-    .project-btn > button:hover {
+    .desktop-view > button:hover {
         color: $buttonColor;
     }
+    
 }
 
