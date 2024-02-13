@@ -9,22 +9,22 @@ export default function Footer({rings}) {
     return(
         <>
             <div className='contact-container'>
-                <p className="contact-title">Contact</p>
-                <p className='contact-description'>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+                <div className='contact-wrapper'>
+                    <p className="contact-title">Contact</p>
+                    <p className='contact-description'>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+                </div>
                 <form action="">
-                    <label htmlFor="">NAME</label>
-                    <input type="text" />
-                    <label htmlFor="">EMAIL</label>
-                    <input type="text" />
-                    <label htmlFor="">Message</label>
-                    <textarea name="Name" id="" cols="30" rows="6"></textarea>
-                    <input className='btn' type="button" value="SEND MESSAGE" />
+                    <input type="text" placeholder='NAME' required/>
+                    <input type="email" placeholder='EMAIL' />
+                    <span className='error'></span>
+                    <textarea name="Name" placeholder='MESSAGE' id="" cols="30" rows="6"></textarea>
+                    <input type="submit" className='btn' value="SEND MESSAGE" />
                 </form>
                 <img className='ringFooter' src={rings} alt="" />
             </div>
             <footer>
                 <div className='footer-wrapper'>
-                    <h3>adamkeyes</h3>
+                    <h3 className='footer-title'>adamkeyes</h3>
                     <div className='footer-links'>
                         <a href="https://github.com/">
                             <img src={github} alt="github-icon" />
