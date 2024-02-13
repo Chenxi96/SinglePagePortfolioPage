@@ -7,20 +7,19 @@ $textColor: #FFFFFF;
 #root {
   position: relative;
   width: 100%;
+  background-image: url('./assets/images/pattern-rings.svg'), url('./assets/images/pattern-rings.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 124px left -21.5rem, top 1287px right -344px;
   overflow: hidden;
-}
-
-.ringLeft {
-  position: absolute;
-  left: -342px;
-  top: 7.75rem;
 }
 
 .circleRight {
   position: absolute;
-  left: 311px;
   top: 254px;
+  right: -64.5px;
+  z-index: 2;
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -51,6 +50,10 @@ article.description {
   text-align: center;
   margin-inline: auto;
   margin-bottom: 80px;
+}
+
+article.description button:hover {
+  color: $buttonColor;
 }
 
 // experience component
@@ -99,6 +102,9 @@ section.project-container {
 
 section.footer-section {
   background-color: $footerFormColor;
+  background-image: url('./assets/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 269px left -343px;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,6 +112,13 @@ section.footer-section {
     position: relative;
     margin-left: 54vw;
     z-index: 1;
+  }
+
+  .circleRight {
+    position: absolute;
+    top: 471px;
+    right: -64.5px;
+    z-index: 2;
   }
 
   .description-title {
@@ -171,6 +184,13 @@ section.footer-section {
     width:  77.083%;
     padding-top: 72px;
     gap: 58px 35px;
+  }
+
+  .circleRight {
+    position: absolute;
+    top: 521px;
+    right: 545px;
+    z-index: 2;
   }
 
   article.description {

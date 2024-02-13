@@ -108,6 +108,12 @@ footer {
     gap: 25.6px;
 }
 
+a:hover {
+    path {
+        fill: $buttonColor;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .footer-wrapper {
         display: flex;
