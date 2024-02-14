@@ -1,5 +1,5 @@
 import Github from '../assets/images/icon-github.svg?react'
-import FrontEnd from '../assets/images/icon-frontEnd-mentor.svg?react'
+import FrontEnd from '../assets/images/icon-frontend-mentor.svg?react'
 import Linkedin from '../assets/images/icon-linkedin.svg?react'
 import Twitter from '../assets/images/icon-twitter.svg?react'
 import '../components/Footer.scss'
