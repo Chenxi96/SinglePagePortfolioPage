@@ -33,6 +33,7 @@ function App() {
               </a>
             </div>
           </nav>
+          
           <img className='profileImage' src={mobilePic} alt="" width={174} height={383} />
         </header>
       <article className='description'>
