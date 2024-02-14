@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Github from './assets/images/icon-github.svg?react'
-import FrontEnd from './assets/images/icon-frontEnd-mentor.svg?react'
-import Linkedin from './assets/images/icon-linkedin.svg?react'
-import Twitter from './assets/images/icon-twitter.svg?react'
 import rings from './assets/images/pattern-rings.svg'
 import circle from './assets/images/pattern-circle.svg'
 import mobilePic from './assets/images/image-profile-mobile.webp'
 import Project from './components/Project'
 import Footer from './components/Footer'
+import Github from './assets/images/icon-github.svg?react'
+import FrontEnd from './assets/images/icon-frontend-mentor.svg?react'
+import Linkedin from './assets/images/icon-linkedin.svg?react'
+import Twitter from './assets/images/icon-twitter.svg?react'
 import './App.scss'
 
 function App() {
