@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import project1 from '../assets/images/thumbnail-project-1-small.webp'
-import project2 from '../assets/images/thumbnail-project-2-small.webp'
-import project3 from '../assets/images/thumbnail-project-3-small.webp'
-import project4 from '../assets/images/thumbnail-project-4-small.webp'
-import Project5 from '../assets/images/thumbnail-project-5-small.webp'
-import project6 from '../assets/images/thumbnail-project-6-small.webp'
+import project1 from '../assets/images/thumbnail-project-1-large.webp'
+import project2 from '../assets/images/thumbnail-project-2-large.webp'
+import project3 from '../assets/images/thumbnail-project-3-large.webp'
+import project4 from '../assets/images/thumbnail-project-4-large.webp'
+import Project5 from '../assets/images/thumbnail-project-5-large.webp'
+import project6 from '../assets/images/thumbnail-project-6-large.webp'
 import '../components/Project.scss'
 
 export default function Project() {
@@ -23,7 +23,7 @@ export default function Project() {
                     setDesktopView('desktop-view')
                     setSelectImg(1)
                     }}
-                    onMouseLeave={() => setDesktopView('')}>   
+                    onMouseLeave={() => setDesktopView('')}>
                     <img src={project1} alt="" />
                     <div className='project-title'>
                         <h3>Design Portfolio</h3>

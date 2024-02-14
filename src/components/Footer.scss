@@ -22,6 +22,7 @@ p.contact-title {
 form {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 input {
@@ -29,6 +30,32 @@ input {
     border: none;
     background-color: inherit;
     border-bottom: 1px solid $textColor;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+input[type='text']:valid {
+    border-bottom: 1px solid $buttonColor;
+}
+
+input[type='email']:invalid {
+    border-bottom: 1px solid #FF6F5B;
+    background-image: url('../assets/images/icon-frontend.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+input[type='email']:invalid + span::before {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    content: 'Sorry, invalid format here';
+    color: #FF6F5B;
+}
+
+span.error {
+    border-bottom: none;
 }
 
 label {
@@ -42,6 +69,9 @@ textarea {
     border: none;
     border-bottom: 1px solid $textColor;
     background-color: inherit;
+    margin-top: 2rem;
+    font-size: 1rem;
+    resize: none;
 }
 
 input.btn {
@@ -49,6 +79,11 @@ input.btn {
     margin-top: 32px;
     border-bottom: 2px solid $buttonColor;
     margin-bottom: 87px;
+    cursor: pointer;
+}
+
+input.btn:hover {
+    color: $buttonColor;
 }
 
 footer {
@@ -71,4 +106,72 @@ footer {
     display: flex;
     justify-content: center;
     gap: 25.6px;
+}
+
+a:hover {
+    path {
+        fill: $buttonColor;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-title {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.44px;
+    }
+
+    p.contact-title {
+        font-size: 72px;
+    }
+
+    .contact-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .contact-wrapper {
+        width: 68.98%;
+        margin-inline: auto;
+    }
+
+    form {
+        width: 68.98%;
+        margin-inline: auto;
+    }
+
+    input.btn {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+    }
+
+    label {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.22px;
+        color: $outlineColor;
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+        padding-top: 84px;
+    }
+
+    .contact-wrapper {
+        text-align: left;
+    }
 }

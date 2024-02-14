@@ -1,10 +1,10 @@
 import { useState } from 'react'
+import Github from './assets/images/icon-github.svg?react'
+import FrontEnd from './assets/images/icon-frontEnd-mentor.svg?react'
+import Linkedin from './assets/images/icon-linkedin.svg?react'
+import Twitter from './assets/images/icon-twitter.svg?react'
 import rings from './assets/images/pattern-rings.svg'
 import circle from './assets/images/pattern-circle.svg'
-import github from './assets/images/icon-github.svg'
-import frontEnd from './assets/images/icon-frontEnd-mentor.svg'
-import linkedin from './assets/images/icon-linkedin.svg'
-import twitter from './assets/images/icon-twitter.svg'
 import mobilePic from './assets/images/image-profile-mobile.webp'
 import Project from './components/Project'
 import Footer from './components/Footer'
@@ -14,31 +14,30 @@ function App() {
 
   return (
     <>
-      <img className='ringLeft' src={rings} alt="" />
-      <img className='circleRight' src={circle} alt="" />
+      <img className='circleRight' src={circle} alt="" width={129} height={129} />
         <header>
           <nav>
             <h3>adamkeyes</h3>
             <div className='links'>
               <a href="https://github.com/">
-                <img src={github} alt="github-icon" />
+                <Github width={25} height={24} />
               </a>
               <a href="https://www.frontendmentor.io/">
-                <img src={frontEnd} alt="frontend-icon" />
+                <FrontEnd width={25} height={24} />
               </a>
               <a href="https://www.linkedin.com/">
-                <img src={linkedin} alt="linkedin-icon" />
+                <Linkedin width={25} height={24} />
               </a>
               <a href="https://twitter.com/">
-                <img src={twitter} alt="twitter-icon" />
+                <Twitter width={25} height={24} />
               </a>
             </div>
           </nav>
-          <img className='profileImage' src={mobilePic} alt="" width={174} />
+          <img className='profileImage' src={mobilePic} alt="" width={174} height={383} />
         </header>
       <article className='description'>
-        <h1>Nice to meet you! I'm <span>Adam keyes.</span></h1>
-        <p>Based in the UK, I'm a front-end developer passionate about building accessible web apps that uses love.</p>
+        <h1 className='description-title'>Nice to meet you! I'm <span>Adam keyes</span>.</h1>
+        <p className='description-main'>Based in the UK, I'm a front-end developer passionate about building accessible web apps that uses love.</p>
         <button>CONTACT ME</button>
       </article>
       <section className='experience'>
@@ -68,7 +67,6 @@ function App() {
             <p>3 Years Experience</p>
           </div>
         </div>
-        <img className='ringRight' src={rings} alt="" />
       </section>
       <section className='project-container'>
         <Project />
