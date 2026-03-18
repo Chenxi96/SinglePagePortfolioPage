@@ -96,7 +96,7 @@ $textColor: #FFFFFF;
         width: max-content;
     }
 
-    .desktop-view > button:hover {
+    .desktop-view > button > a:hover {
         color: $buttonColor;
     }
     

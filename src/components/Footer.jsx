@@ -23,15 +23,15 @@ export default function Footer({rings}) {
             </div>
             <footer>
                 <div className='footer-wrapper'>
-                    <h3 className='footer-title'>adamkeyes</h3>
+                    <h3 className='footer-title'>chenxilin</h3>
                     <div className='footer-links'>
-                        <a href="https://github.com/">
+                        <a href="https://github.com/Chenxi96">
                             <Github />
                         </a>
                         <a href="https://www.frontendmentor.io/">
                             <FrontEnd />
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/in/chenxilin/">
                             <Linkedin />
                         </a>
                         <a href="https://twitter.com/">
