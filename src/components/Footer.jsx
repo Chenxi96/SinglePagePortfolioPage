@@ -28,9 +28,6 @@ export default function Footer({rings}) {
                         <a href="https://github.com/Chenxi96">
                             <Github />
                         </a>
-                        <a href="https://www.frontendmentor.io/">
-                            <FrontEnd />
-                        </a>
                         <a href="https://www.linkedin.com/in/chenxilin/">
                             <Linkedin />
                         </a>

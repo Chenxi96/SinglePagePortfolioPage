@@ -4,7 +4,7 @@ import '../components/Project.scss'
 export default function Project({project}) {
     const[desktopView, setDesktopView] = useState('');
     const [selectImg, setSelectImg] = useState(0);
-
+    console.log(project)
     return(
         <div onMouseEnter={() => 
             {
@@ -15,8 +15,9 @@ export default function Project({project}) {
             <img src={project.image} alt="" />
             <div className='project-title'>
                 <h3>{project.title}</h3>
-                <p className='inline'>HTML</p>
-                <p className='inline'>CSS</p>
+                {project.language_used.toString().split(',').map(lang => {
+                    return <p className='inline'>{lang}</p>
+                })}
             </div>
             {desktopView && innerWidth >= 1440 && selectImg === 1 ? 
             <div className={desktopView}>

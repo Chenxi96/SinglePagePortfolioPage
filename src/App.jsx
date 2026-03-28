@@ -19,9 +19,6 @@ function App() {
               <a href="https://github.com/Chenxi96">
                 <Github width={25} height={24} />
               </a>
-              <a href="https://www.frontendmentor.io/">
-                <FrontEnd width={25} height={24} />
-              </a>
               <a href="https://www.linkedin.com/in/chenxilin/">
                 <Linkedin width={25} height={24} />
               </a>
