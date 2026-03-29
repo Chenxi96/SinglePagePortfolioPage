@@ -31,7 +31,7 @@ function App() {
         </header>
       <article className='description'>
         <h1 className='description-title'>Nice to meet you! I'm <span>Chen Xi Lin</span>.</h1>
-        <p className='description-main'>Based in the Canada, I'm a full-stack developer passionate about building accessible web apps that uses love.</p>
+        <p className='description-main'>Based in the Canada, I'm a full-stack developer with hands-on experience building user-centric web applications using React and JavaScript.</p>
         <button>CONTACT ME</button>
       </article>
       <section className='experience'>
